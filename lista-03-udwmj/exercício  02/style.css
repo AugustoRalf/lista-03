@@ -1,0 +1,84 @@
+/* Configurações gerais da página */
+body {
+    margin: 0;
+
+    /* Faz a página ocupar toda a altura da tela */
+    min-height: 100vh;
+
+    /* Ativa o Flexbox */
+    display: flex;
+
+    /* Centraliza horizontalmente */
+    justify-content: center;
+
+    /* Centraliza verticalmente */
+    align-items: center;
+
+    /* Define a fonte */
+    font-family: Arial, sans-serif;
+
+    /* Define a cor de fundo */
+    background-color: #e9eef5;
+}
+
+/* Estiliza a caixa da calculadora */
+.calculadora {
+    background-color: white;
+
+    /* Espaçamento interno */
+    padding: 35px;
+
+    /* Arredonda os cantos */
+    border-radius: 15px;
+
+    /* Centraliza os textos */
+    text-align: center;
+
+    /* Define a largura */
+    width: 320px;
+    max-width: 85%;
+
+    /* Adiciona uma sombra */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estiliza o título */
+h1 {
+    color: #1e293b;
+}
+
+/* Estiliza o campo de entrada */
+input {
+    padding: 12px;
+    width: 80%;
+    margin-bottom: 15px;
+
+    border: 1px solid #94a3b8;
+    border-radius: 6px;
+}
+
+/* Estiliza o botão */
+button {
+    padding: 12px 20px;
+
+    background-color: #2563eb;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    /* Mostra a mãozinha ao passar o mouse */
+    cursor: pointer;
+}
+
+/* Altera a cor ao passar o mouse */
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Estiliza o resultado */
+#resultado {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #166534;
+}

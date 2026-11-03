@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- Informa que estamos utilizando HTML5 -->
+
+<html lang="pt-br">
+<!-- Define o idioma da página -->
+
+<head>
+
+    <!-- Permite acentos e caracteres especiais -->
+    <meta charset="UTF-8">
+
+    <!-- Adapta a página a diferentes telas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Define o título da aba do navegador -->
+    <title>Calculadora de Juros Compostos</title>
+
+    <!-- Conecta o HTML ao arquivo style.css -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- DIV: agrupa os elementos da calculadora -->
+    <div class="calculadora">
+
+        <!-- H1: título principal da página -->
+        <h1>Juros Compostos</h1>
+
+        <!-- LABEL: identifica o campo do capital inicial -->
+        <label for="capital">Capital inicial (R$):</label>
+
+        <!-- INPUT: recebe o capital inicial -->
+        <input
+            type="number"
+            id="capital"
+            placeholder="Ex.: 1000"
+            min="0"
+            step="any"
+        >
+
+        <!-- LABEL: identifica o campo da taxa -->
+        <label for="taxa">Taxa de juros (% ao mês):</label>
+
+        <!-- INPUT: recebe a taxa de juros -->
+        <input
+            type="number"
+            id="taxa"
+            placeholder="Ex.: 2"
+            min="0"
+            step="any"
+        >
+
+        <!-- LABEL: identifica o campo do tempo -->
+        <label for="tempo">Tempo de investimento (meses):</label>
+
+        <!-- INPUT: recebe o tempo de investimento -->
+        <input
+            type="number"
+            id="tempo"
+            placeholder="Ex.: 12"
+            min="0"
+            step="1"
+        >
+
+        <!-- BUTTON: executa a função calcularJuros() -->
+        <button onclick="calcularJuros()">
+            Calcular montante
+        </button>
+
+        <!-- P: exibe o resultado do cálculo -->
+        <p id="resultado"></p>
+
+    </div>
+
+    <!-- Conecta o HTML ao arquivo calculo.js -->
+    <script src="calculo.js"></script>
+
+</body>
+
+</html>

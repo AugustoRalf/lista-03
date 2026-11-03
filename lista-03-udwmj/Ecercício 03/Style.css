@@ -1,0 +1,143 @@
+/* Configurações gerais da página */
+body {
+
+    /* Remove as margens padrão do navegador */
+    margin: 0;
+
+    /* Faz a página ocupar toda a altura da tela */
+    min-height: 100vh;
+
+    /* Ativa o Flexbox */
+    display: flex;
+
+    /* Centraliza horizontalmente */
+    justify-content: center;
+
+    /* Centraliza verticalmente */
+    align-items: center;
+
+    /* Define a fonte */
+    font-family: Arial, sans-serif;
+
+    /* Define a cor de fundo */
+    background-color: #e9eef5;
+}
+
+/* Estiliza a caixa da calculadora */
+.calculadora {
+
+    /* Define a cor de fundo */
+    background-color: white;
+
+    /* Cria espaçamento interno */
+    padding: 35px;
+
+    /* Arredonda os cantos */
+    border-radius: 15px;
+
+    /* Define a largura */
+    width: 350px;
+    max-width: 85%;
+
+    /* Adiciona uma sombra */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estiliza o título */
+h1 {
+
+    /* Centraliza o texto */
+    text-align: center;
+
+    /* Define a cor do título */
+    color: #1e293b;
+}
+
+/* Estiliza as descrições dos campos */
+label {
+
+    /* Faz cada label ocupar sua própria linha */
+    display: block;
+
+    /* Espaçamento acima */
+    margin-top: 15px;
+
+    /* Espaçamento abaixo */
+    margin-bottom: 6px;
+
+    /* Deixa o texto em negrito */
+    font-weight: bold;
+
+    /* Define a cor */
+    color: #334155;
+}
+
+/* Estiliza os campos de entrada */
+input {
+
+    /* Inclui padding e borda no cálculo da largura */
+    box-sizing: border-box;
+
+    /* Ocupa toda a largura disponível */
+    width: 100%;
+
+    /* Cria espaçamento interno */
+    padding: 12px;
+
+    /* Define a borda */
+    border: 1px solid #94a3b8;
+
+    /* Arredonda os cantos */
+    border-radius: 6px;
+}
+
+/* Estiliza o botão */
+button {
+
+    /* Ocupa toda a largura */
+    width: 100%;
+
+    /* Cria espaçamento interno */
+    padding: 12px;
+
+    /* Cria espaço acima do botão */
+    margin-top: 25px;
+
+    /* Define a cor de fundo */
+    background-color: #2563eb;
+
+    /* Define a cor do texto */
+    color: white;
+
+    /* Remove a borda padrão */
+    border: none;
+
+    /* Arredonda os cantos */
+    border-radius: 6px;
+
+    /* Mostra a mãozinha ao passar o mouse */
+    cursor: pointer;
+}
+
+/* Efeito ao passar o mouse */
+button:hover {
+
+    /* Altera a cor do botão */
+    background-color: #1d4ed8;
+}
+
+/* Estiliza o resultado */
+#resultado {
+
+    /* Espaçamento acima */
+    margin-top: 20px;
+
+    /* Centraliza o texto */
+    text-align: center;
+
+    /* Deixa o texto em negrito */
+    font-weight: bold;
+
+    /* Define a cor verde */
+    color: #166534;
+}

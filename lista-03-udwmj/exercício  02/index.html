@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- Informa ao navegador que utilizamos HTML5 -->
+
+<html lang="pt-br">
+<!-- Define o idioma da página -->
+
+<head>
+    <!-- Permite acentos e caracteres especiais -->
+    <meta charset="UTF-8">
+
+    <!-- Adapta a página para diferentes telas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título exibido na aba do navegador -->
+    <title>Volume da Esfera</title>
+
+    <!-- Conecta o arquivo CSS ao HTML -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- DIV: agrupa os elementos da calculadora -->
+    <div class="calculadora">
+
+        <!-- H1: título principal -->
+        <h1>Volume da Esfera</h1>
+
+        <!-- P: parágrafo com uma instrução -->
+        <p>Digite o raio da esfera:</p>
+
+        <!-- INPUT: campo para inserir um número -->
+        <input
+            type="number"
+            id="raio"
+            placeholder="Digite o raio"
+            min="0"
+            step="any"
+        >
+
+        <!-- BUTTON: executa a função calcularVolume -->
+        <button onclick="calcularVolume()">
+            Calcular volume
+        </button>
+
+        <!-- P: local onde aparecerá o resultado -->
+        <p id="resultado"></p>
+
+    </div>
+
+    <!-- Conecta o JavaScript ao HTML -->
+    <script src="calculo.js"></script>
+
+</body>
+</html>
